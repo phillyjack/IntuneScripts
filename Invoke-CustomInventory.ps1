@@ -24,15 +24,16 @@
     2.0.1 (2021-09-01) Removed all location information for privacy reasons 
     2.1 - (2021-09-08) Added section to cater for BIOS release version information, for HP, Dell and Lenovo and general bugfixes
     2.1.1 - (2021-21-10) Added MACAddress to the inventory for each NIC. 
+    2.1.2 - (2022-10-12) Added Drive Serial Number
 #>
 #region initialize
 # Enable TLS 1.2 support 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 # Replace with your Log Analytics Workspace ID
-$CustomerId = "cf2e404d-bbbc-49ca-8342-f8aa813c2b52"  
+$CustomerId = ""  
 
 # Replace with your Primary Key
-$SharedKey = "+u6UlTLFOLBzOIv2GZGb5H6sAl6pu8soR15w0GqfSdbDFpmcfLRREzr2J1JU/0JkIceu1GGk9c4pJiKpoXGV4A=="
+$SharedKey = ""
 
 #Control if you want to collect App or Device Inventory or both (True = Collect)
 $CollectAppInventory = $true
